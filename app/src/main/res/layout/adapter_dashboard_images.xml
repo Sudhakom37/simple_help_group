@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp"
+    android:layout_height="128dp">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/iv_dashboard_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/employee_focus_groups"
+
+    />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

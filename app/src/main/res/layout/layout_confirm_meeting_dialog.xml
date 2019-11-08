@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/meeting_dialog_bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="8dp"
+        android:background="@drawable/meeting_dialog_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parent_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/meeting_dialog_bg1"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/confirm_meeting_dailog_bg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_subject_body"
+                    android:layout_marginStart="8dp"
+                    android:text="Are you Sure You Want to start meeting ?"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/sky_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:lineSpacingExtra="10dp"
+                    android:id="@+id/tv_date"
+                    android:text="24th october 2019"
+                    android:gravity="start"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/sky_blue"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:textColor="@color/white"
+                    android:background="@drawable/enrollment_submit_bg"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_height="35dp"
+                    android:text="Start"/>
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:textColor="@color/white"
+                    android:background="@drawable/dialog_cancel_bg"
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/Cancel"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

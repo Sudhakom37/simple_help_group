@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="350dp"
+        android:layout_height="350dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/imgg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_user"/>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="Your Face Template has been captured and will map with Unique Id"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Do you want to map this as identical faces?"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:text="NO"
+                    android:padding="9dp"
+                    android:background="@color/red"
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:layout_alignParentBottom="true"
+                    android:text="YES"
+                    android:padding="9dp"
+                    android:background="@color/green"
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:layout_alignParentBottom="true"
+                    android:text="SUBMIT"
+                    android:padding="9dp"
+                    android:background="@color/white"
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

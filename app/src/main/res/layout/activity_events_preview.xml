@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/shg_toolbar"/>
+<TextView
+    android:id="@+id/tv_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:text="Camera Gallery "
+    android:paddingStart="8dp"
+    android:textSize="17sp"
+
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_light_grey"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/event_image_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:background="@color/zm_white"
+    >
+   <TextView
+       android:id="@+id/zm_notification_contact_list_item_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="17sp"
+       android:text="Aaron"
+       android:textColor="@color/zm_black"
+       android:layout_marginLeft="16dp"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="right">
+       <ImageView
+           android:id="@+id/zm_notification_contact_list_item_delete_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:src="@drawable/zm_notification_delete"
+           android:layout_marginRight="20dp"
+           />
+   </LinearLayout>
+</LinearLayout>

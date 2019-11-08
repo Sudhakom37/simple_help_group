@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        style="@style/ZMTextView.Medium.Dimmed"
+        android:text="@string/zm_lbl_sip_wrong_passwd_msg_25326"
+        android:id="@+id/title"/>
+
+    <EditText
+        style="@style/ZMEditText"
+        android:textSize="14sp"
+        android:id="@+id/edtPassword"
+        android:hint="@string/zm_lbl_sip_wrong_passwd_edit_hint_25326"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanction Loan Amount"
+            android:textSize="17sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
+        android:background="@color/color_light_grey"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Add Sanction Amount"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Group Selection"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/color_light_grey"
+        />
+    <Spinner android:id="@+id/sp_group_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/color_light_grey"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Amount"
+        android:layout_marginStart="16dp"
+        />
+    <EditText android:id="@+id/et_loan_amount"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="Enter Loan Amount"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/views_background"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="32dp"
+    >
+    <Button android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/enrollment_cancel_bg"
+        />
+    <Button android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/enrollment_submit_bg"
+        android:layout_marginStart="16dp"
+        />
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="14dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/slash_command_item_owner_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/slash_command_item_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zm_gray_1.5"
+            android:textSize="14sp"
+            android:text="Giphy"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/zm_gray_1.5"
+            android:layout_marginLeft="10dp"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="14dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+         <TextView
+             android:id="@+id/slash_command_item_command"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/zm_black"
+             android:singleLine="true"
+             android:text="/giphy"/>
+        <TextView
+            android:id="@+id/slash_command_item_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zm_gray_3"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:text="post a random gif"/>
+    </LinearLayout>
+</LinearLayout>

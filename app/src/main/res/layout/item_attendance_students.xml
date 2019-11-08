@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_parent"
+    android:padding="5dp"
+
+    >
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/imgg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_user"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:layout_gravity="bottom|right"
+                android:id="@+id/undo_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_check_right"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                />
+
+            <ImageView
+                android:scaleType="centerInside"
+                android:layout_gravity="right"
+                android:id="@+id/attended"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_check_right"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/linear_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/stu_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

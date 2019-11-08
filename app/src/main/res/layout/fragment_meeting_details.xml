@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:textSize="17sp"
+        android:gravity="center_vertical"
+        android:text="Meeting Details"
+        android:textColor="@color/black"
+        />
+    <ImageView android:id="@+id/iv_meting_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        />
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="#" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Meeting Name" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="UserCount" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorGrey"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/meeting_calender_red"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="8dp"
+                        android:padding="4dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_meeting_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1.9"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:gravity="start|center"
+                        android:text="meeting1" />
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/meeting_page_user_blue"
+                        android:layout_gravity="center|start"
+                        android:layout_marginEnd="8dp"
+                        android:padding="4dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_user_count"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="0.5"
+                        android:textSize="17sp"
+                        android:gravity="center|start"
+                        android:text="01" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_meeting_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="8dp"
+                    android:text="Group Members" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorPrimary" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_meeting_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

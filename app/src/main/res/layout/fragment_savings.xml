@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_margin="8dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentStart="true"
+            android:gravity="start|center"
+            android:text="Group Savings"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            ><RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            >
+            <View
+                android:layout_width="4dp"
+                android:layout_height="24dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Total  Savings:"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="start|center"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:id="@+id/tv_total_savings_value"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="200000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                />
+
+        </RelativeLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Member Name"
+
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:layout_marginStart="16dp"
+                />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Savings Amount"
+                android:layout_weight="1"
+
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                />
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/color_light_grey"
+                />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_savings_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

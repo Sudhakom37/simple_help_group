@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/toolbar_zoom"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@color/loginbtn_bg"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnPreMeeting"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:text="Create Meeting"
+            android:onClick="onClickBtnPreMeeting" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtMeetingNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meeting ID"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:focusable="true"
+        android:maxLength="13">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtVanityUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vanity ID"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:focusable="true">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtMeetingPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Meeting Password(For join meeting only)"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:focusable="true">
+
+    </EditText>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btnStartMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:text="Start this Meeting"
+            android:onClick="onClickBtnStartMeeting" />
+
+        <Button
+            android:id="@+id/btnJoinMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Join this Meeting"
+            android:onClick="onClickBtnJoinMeeting" />
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="150dp"
+        android:onClick="onClickReturnMeeting"
+        android:text="Return Meeting" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnLoginUserStartInstant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Start a Instant Meeting"
+        android:onClick="onClickBtnLoginUserStartInstant" />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="150dp"
+        android:onClick="onClickSettings"
+        android:text="Setting" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Logout"
+        android:onClick="onClickBtnLogout" />
+
+</RelativeLayout>

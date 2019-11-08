@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ll_total_savings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/dashboard_total_loans_bg"
+            android:orientation="horizontal"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Total Savings"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            />
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_total_savings_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="25000"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:src="@drawable/drawable_total_savings_dashboard"
+                />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ll_total_loans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/dashboard_current_loans_bg"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Current Loan"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_current_loan_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="25000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Repayment"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tv_repayments_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="25000"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:src="@drawable/drawable_current_loans_dashboard"
+            />
+    </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@drawable/dashboard_gradient_background"
+    android:layout_margin="8dp"
+    >
+    <TextView
+        android:id="@+id/tv_meetings_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_meetings_conducted"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_meetings_text"
+        >
+    <TextView
+        android:id="@+id/tv_meetings_conducted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="37sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        />
+   <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       android:layout_marginTop="4dp"
+       android:padding="4dp"
+       >
+       <ImageView
+           android:id="@+id/iv_first_week"
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:layout_gravity="center"
+           android:padding="2dp"
+           android:src="@drawable/ic_tick_mark"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:layout_gravity="center"
+           android:gravity="center_vertical"
+           android:textSize="12sp"
+           android:textColor="@color/white"
+           android:text="1st week"
+           android:ellipsize="end"
+           />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            >
+            <ImageView
+                android:id="@+id/iv_second_week"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/ic_tick_mark"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="2nd week"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            >
+            <ImageView
+                android:id="@+id/iv_third_week"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/ic_tick_mark"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="3rd week"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            >
+            <ImageView
+                android:id="@+id/iv_fourth_week"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/ic_tick_mark"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="4th week"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            >
+            <ImageView
+                android:id="@+id/iv_fifth_week"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/ic_tick_mark"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="5th week"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_last_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp"
+    >
+<LinearLayout
+    android:id="@+id/ll_last_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+<View
+    android:layout_width="4dp"
+    android:layout_height="24dp"
+    android:background="@color/colorPrimary"
+    />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:text="Last Meeting"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/colorGrey"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.5"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="01-10-2019"
+        android:gravity="center|start"
+        android:layout_weight="1"
+        android:layout_marginStart="4dp"
+        />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_light_grey"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Last Meeting Date"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            />
+<View
+    android:layout_width="0dp"
+    android:layout_height="2dp"
+    android:background="@color/colorGrey"
+    android:layout_marginTop="16dp"
+    android:layout_weight="0.5"
+    />
+
+        <TextView
+            android:id="@+id/tv_last_meeting_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="01-10-2019"
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Attendance Count"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/colorGrey"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:id="@+id/tv_village_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="07"
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dashboard_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:text="Defaulters List"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:text="01/02/2019"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:background="@drawable/views_background"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_light_grey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="FeedBack"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="FeedBack Type"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                >
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="7dp"
+                    android:text="Name"
+                    android:layout_weight="1.4"
+                    />
+                <TextView
+                    android:id="@+id/tv_mobile_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Mobile no"
+                    android:layout_weight="0.8"
+                    />
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:text="amount"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/color_light_grey"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_group_members_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

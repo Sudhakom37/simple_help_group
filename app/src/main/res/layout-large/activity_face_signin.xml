@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/camera"
+    android:orientation="horizontal">
+
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="15dp"
+        android:text="Login with M-PIN"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        style="@android:style/ButtonBar">
+
+
+
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close_black"
+            android:visibility="gone"
+            android:id="@+id/clearButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange"
+        android:id="@+id/submit"
+        android:textAllCaps="true"
+        android:text="Submit"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

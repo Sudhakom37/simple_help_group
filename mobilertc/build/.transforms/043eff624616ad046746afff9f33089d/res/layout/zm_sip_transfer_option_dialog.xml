@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zm_ui_kit_large_button_height"
+        style="@style/UIKitItinactivatedBtn"
+        android:text="@string/zm_sip_btn_warm_transfer_61381"
+        android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnWarmTransfer"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginTop="10dp"
+        style="@style/UIKitTextView.PrimaryText.Normal.Gray"
+        android:text="@string/zm_sip_warm_transfer_des_61381"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zm_ui_kit_large_button_height"
+        style="@style/UIKitItinactivatedBtn"
+        android:text="@string/zm_sip_btn_blind_transfer_61381"
+        android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnBlindTransfer"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding"
+        android:layout_marginTop="10dp"
+        style="@style/UIKitTextView.PrimaryText.Normal.Gray"
+        android:text="@string/zm_sip_blind_transfer_des_61381"
+        android:gravity="center"/>
+
+    <View
+        style="@style/ZMLightLine"
+        android:layout_marginTop="24dp"
+        android:id="@+id/line1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/UIKitTextView.LargeTitle.Clickable"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/btn_close"
+        android:text="@string/zm_btn_cancel"
+        android:contentDescription="@string/zm_btn_cancel"
+        android:background="@drawable/zm_ui_kit_big_round_dialog_bottom_btn_transparent_selector"
+        />
+
+</LinearLayout>

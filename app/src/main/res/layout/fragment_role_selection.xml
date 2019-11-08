@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Role selection "
+    android:textSize="27sp"
+    android:gravity="center_horizontal"
+    android:textColor="@color/black"
+    />
+    <Spinner
+        android:id="@+id/sp_role"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+
+        />
+    <Button
+        android:id="@+id/bt_role_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verify_otp_background"
+        android:text="Go"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

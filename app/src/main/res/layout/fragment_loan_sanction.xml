@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanction Loan Amount"
+            android:textSize="17sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            />
+        <ImageView android:id="@+id/iv_add_loan"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
+        android:background="@color/color_light_grey"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                >
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="24dp"
+                    android:background="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Total  Sanctions:"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    android:layout_marginStart="16dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_total_sanctions_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="200000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/green"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/ll_savings_adapter"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_loan_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Group Name"
+                    android:layout_weight="1"
+
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    android:layout_marginStart="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_loan_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Sanction Amount"
+                    android:layout_weight="1.3"
+
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    />
+                <ImageView
+                    android:id="@+id/iv_date"
+                    android:layout_width="24dp"
+                    android:layout_height="48dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_meeting_date"
+                    />
+                <TextView
+                    android:id="@+id/tv_loan_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Date"
+
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:layout_marginEnd="8dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_light_grey"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_group_loan_sanction_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

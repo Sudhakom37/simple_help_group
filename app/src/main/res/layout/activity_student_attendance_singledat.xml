@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:padding="10dp"
+        android:visibility="visible"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        style="@android:style/ButtonBar">
+
+        <Space
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:visibility="gone"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:id="@+id/helpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_color"
+            android:text="Submit" />
+
+
+        <ToggleButton
+            android:visibility="gone"
+            android:padding="10dp"
+            android:id="@+id/onOffFlashlight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textOn=""
+            android:textOff=""
+            android:checked="false"
+            android:background="@drawable/togglecheck"
+            android:layout_centerVertical="true"
+            android:text="" />
+        <ToggleButton
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/onOffFlashlight"
+            android:id="@+id/camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textOn=""
+            android:textOff=""
+            android:checked="false"
+            android:background="@drawable/camera_black"
+            android:text="" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close_black"
+            android:visibility="visible"
+            android:id="@+id/clearButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/transparent_color"
+        style="@android:style/ButtonBar">
+
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:text="Submit"
+            android:padding="10dp"
+            android:background="@color/green"
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/camera"
+    android:orientation="horizontal">
+    <include layout="@layout/shg_toolbar"
+        android:id="@+id/shg_toolbar"
+        />
+    <TextView
+        android:id="@+id/tv_login"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Start For Meeting"
+        android:paddingStart="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/shg_toolbar"
+        android:textColor="@color/black"
+        />
+    <View android:id="@+id/v_devider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_light_grey"
+        android:layout_below="@+id/tv_login"
+        />
+    <TextView android:id="@+id/tv_identification"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Identification"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/v_devider"
+        />
+    <View
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/tv_identification"
+        />
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="15dp"
+        android:text="Login with M-PIN"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        style="@android:style/ButtonBar">
+
+
+
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close_black"
+            android:visibility="gone"
+            android:id="@+id/clearButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange"
+        android:id="@+id/submit"
+        android:textAllCaps="true"
+        android:text="Submit"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

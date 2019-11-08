@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="200dp"
+    android:background="@drawable/zm_sip_float_window_panel"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/sip_call" />
+
+    <TextView
+        android:layout_below="@+id/imageButton1"
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/zm_sip_call_calling_503"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#2aa515" />
+
+</RelativeLayout>

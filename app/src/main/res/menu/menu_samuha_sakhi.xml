@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_menu"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/loans"
+            android:icon="@drawable/ic_enrollment_menu"
+            android:title="Loans" />
+        <item
+            android:id="@+id/change_password"
+            android:icon="@drawable/ic_change_password_menu"
+            android:title="@string/change_password" />
+
+        <item
+
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout_menu"
+            android:title="@string/logout" />
+
+    </group>
+
+
+</menu>
